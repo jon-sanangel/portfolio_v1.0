@@ -1,1 +1,29 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+
+  h1, h2, button {
+    font-weight: 700 !important;
+  }
+  
+  h5 {
+    color: #55e6a5;
+  }
+
+  p {
+    line-height: 1.5em;
+  }
+}
+
+.dark {
+  background-color: #121920 !important;
+  color: #fff;
+  transition: all 0.2s ease;
+}
+
+.btn-jsa {
+  background-color: #c99d66 !important; 
+  color: #F5F5F5 !important; 
+  padding: 15px 20px !important;
+}
