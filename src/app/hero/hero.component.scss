@@ -1,0 +1,53 @@
+@media (min-width: 1441px) {
+  .container {
+      max-width: 1440px;
+  }
+  .hero-container {
+    height: 105vh !important;
+    // background-image: url("../../assets/icons/feather-wing-svgrepo-com.svg");
+    // background-size: contain;
+    // background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    margin-top: 30px;
+
+    .hero-title {
+      font-size: 2rem !important;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin-top: 30px;
+    
+    .hero-title {
+      font-size: 2rem !important;
+    }
+  }
+}
+
+.hero-container {
+  height: 100vh;
+  // background-image: url("../../assets/icons/feather-wing-svgrepo-com.svg");
+  // background-size: contain;
+  // background-repeat: no-repeat;
+}
+
+.hero-title {
+  font-size: 3rem;
+}
+
+.hero-bg {
+  width: 700px;
+  height: 100px;
+  // margin: 30px;
+  border: 1px solid yellow;
+}
+
+.hero-btn {
+  width: 175px;
+}
