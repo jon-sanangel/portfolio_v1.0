@@ -1,0 +1,30 @@
+<nav class="navbar navbar-expand-sm fixed-top px-0 py-4 gap-4 d-flex flex-row" [ngClass]="darkMode ? 'navbar-dark' : 'navbar-light'">
+  <a class="navbar-brand" href="#">
+    <div class="brand-img h-12" [ngClass]="darkMode ? 'brand-img-dark' : 'brand-img-light'" ></div>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" [ngClass]="darkMode ? 'navbar-collapse-dark' : 'navbar-collapse-light'" id="navbarNav">
+    <ul class="navbar-nav ml-auto" style="color: black;" style="font-weight: 300; font-size: 1rem;">
+      <li class="nav-item">
+        <a class="nav-link" href="#" [ngClass]="darkMode ? 'darkMode' : 'lightMode'">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [ngClass]="darkMode ? 'darkMode' : 'lightMode'" href="#">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [ngClass]="darkMode ? 'darkMode' : 'lightMode'" href="#">Experience</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [ngClass]="darkMode ? 'darkMode' : 'lightMode'" href="#">Technologies</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [ngClass]="darkMode ? 'darkMode' : 'lightMode'" href="#">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" style="cursor: pointer;" (click)="toggleDarkMode()"><i [ngClass]="darkMode ? 'fa fa-sun-o darkMode' : 'fa fa-moon-o lightMode'" style="font-size: 20px; transition: all 1s ease;" aria-hidden="true"></i></a>
+      </li>
+    </ul>
+  </div>
+</nav>
