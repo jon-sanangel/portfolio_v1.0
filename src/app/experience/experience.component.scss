@@ -1,0 +1,34 @@
+@media (min-width: 1441px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+}
+
+section {
+  padding: 155px 0;
+}
+
+.job-exp {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+
+  .exp-date {
+    width: fit-content;
+    padding: 11px 24px;
+    border: 2px solid #c99d66;
+    margin-bottom: 15px;
+  }
+
+  b {
+    font-size: 18px;
+    color: #c99d66;
+  }
+
+  ul {
+    font-size: 1.1rem; 
+    color: rgb(162, 162, 162); 
+    line-height: 1.6;
+    list-style-type: circle;
+  }
+}

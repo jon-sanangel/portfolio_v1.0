@@ -1,9 +1,7 @@
 @media (min-width: 1441px) {
-  .container {
-      max-width: 1440px;
-  }
   .hero-container {
-    height: 105vh !important;
+    height: 100vh;
+    padding-top: 60px;
     // background-image: url("../../assets/icons/feather-wing-svgrepo-com.svg");
     // background-size: contain;
     // background-repeat: no-repeat;
@@ -46,8 +44,4 @@
   height: 100px;
   // margin: 30px;
   border: 1px solid yellow;
-}
-
-.hero-btn {
-  width: 175px;
 }
