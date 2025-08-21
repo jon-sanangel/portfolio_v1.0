@@ -5,13 +5,19 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { HeroComponent } from './hero/hero.component';
 import { AboutComponent } from './about/about.component';
+import { ExperienceComponent } from './experience/experience.component';
+import { TechnologiesComponent } from './technologies/technologies.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     HeroComponent,
-    AboutComponent
+    AboutComponent,
+    ExperienceComponent,
+    TechnologiesComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,
