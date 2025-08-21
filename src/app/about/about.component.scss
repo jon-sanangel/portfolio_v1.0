@@ -2,8 +2,15 @@
   h1 {
     font-size: 3.5rem;
   }
-  .box-content {
-    margin-right: 1rem;
+  .box-container {
+    flex-wrap: nowrap;
+    .card {
+      margin-right: 1rem;
+    }
+  }
+
+  h5 {
+    font-weight: 600;
   }
 }
 
@@ -11,7 +18,7 @@
   .box-container {
     justify-content: center !important;
   }
-  .box-content {
+  .card {
     margin-bottom: 2rem;
   }
 }
@@ -22,13 +29,31 @@
   }
 }
 
+section {
+  padding: 155px 0;
+  border-radius: 17px;
+  margin: 0 15px;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+}
 
-.box-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+.card {
   text-align: center;
-  border: 3px solid rgba(255, 255, 255, 0.103);
+  border-radius: 25px;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
   padding: 30px 15px;
   max-width: 450px;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+.dark-box {
+  background: rgba(255, 255, 255, 0.041);
+  transition: 0.3s ease;
+}
+
+.light-box {
+  background: #f9fafb;
+  transition: 0.3s ease;
 }

@@ -18,13 +18,32 @@ export class HeaderComponent implements OnInit {
   }
 
   toggleDarkMode() {
+    const altSection = document.querySelectorAll('.alt-section');
+    const boxContent = document.querySelectorAll('.box-content');
+    
     if(this.darkMode == false) {
       this.document.body.classList.add('dark');
+      altSection.forEach(el => {
+        el.classList.add('dark-secondary');
+        el.classList.remove('light-secondary');
+      });
+      boxContent.forEach(el => {
+        el.classList.add('dark-box');
+        el.classList.remove('light-box');
+      });
       this.darkMode = true;
       return;
     }
     this.darkMode = false;
     this.document.body.classList.remove('dark');
+    altSection.forEach(el => {
+      el.classList.remove('dark-secondary');
+      el.classList.add('light-secondary');
+    });
+    boxContent.forEach(el => {
+      el.classList.remove('dark-box');
+      el.classList.add('light-box');
+    })
   }
 
 }

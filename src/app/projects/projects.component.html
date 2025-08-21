@@ -1,0 +1,53 @@
+<section class="d-flex">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 d-flex flex-column mb-4 mb-md-0">
+        <h4 class="hero-title" style="font-weight: 500; transition: all 0.2s ease;">PROJECTS</h4>
+        <h1 class="mb-5" style="color: #c99d66;">Leveling Up Through Real Projects</h1>
+        <div class="button-box mb-5">
+          <div id="btn"></div>
+          <button type="button" class="toggle-btn px-6 py-3" style="padding-left: 35px;" (click)="leftClick()">
+            Development
+          </button>
+          <button type="button" class="toggle-btn px-6 py-3" (click)="rightClick()">
+            Design
+          </button>
+        </div>
+        <div class="row box-container">
+          <ng-container *ngIf="developmentView">
+            <div class="d-flex flex-column flex-lg-row" style="margin-bottom: 125px;">
+              <div class="">
+                <img class="img-fluid rounded shadow" style="max-width: 100%; height: auto;" src="../../assets/images/huge.png" alt="project 1" loading="lazy">
+              </div>
+              <div class="flex-column ml-5">
+                <h1>Test Project</h1>
+                <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</span>
+                <hr style="height:2px; border-width:0; color:white; background-color:white; opacity: 0.3;">
+                <div class="d-flex mb-4">
+                  <div class="btn project-tech mr-2"><i class="fa fa-html5" style="color: white;"></i></div>
+                  <div class="btn project-tech mr-2"><i class="fa fa-css3" style="color: white;"></i></div>
+                </div>
+                <button class="btn btn-jsa hero-btn">Repo <i class="fa fa-github"></i></button>
+              </div>
+            </div>
+            <div class="d-flex flex-column flex-lg-row-reverse">
+              <div class="ml-5">
+                <img class="img-fluid rounded shadow" style="max-width: 100%; height: auto;" src="../../assets/images/Untitled design.png" alt="project 1" loading="lazy">
+              </div>
+              <div class="flex-column">
+                <h1>Project Test 2</h1>
+                <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</span>
+                <hr style="height:2px; border-width:0; color:white; background-color:white; opacity: 0.3;">
+                <div class="d-flex mb-4">
+                  <div class="btn project-tech mr-2"><i class="fa fa-linkedin" style="color: white;"></i></div>
+                  <div class="btn project-tech mr-2"><i class="fa fa-facebook" style="color: white;"></i></div>
+                </div>
+                <button class="btn btn-jsa hero-btn">Repo <i class="fa fa-github"></i></button>
+              </div>
+            </div>
+          </ng-container>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
